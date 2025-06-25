@@ -1,32 +1,55 @@
+'use client';
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const About: React.FC = () => {
     return(
-        <section className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-16 px-8 rounded-2xl mt-8">
+        <motion.section
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-16 px-8 rounded-2xl mt-8 shadow-2xl border border-blue-200"
+        >
             <div className="max-w-4xl mx-auto">
                 <div className="mb-8">
-                    <h1 className="text-3xl font-bold text-blue-900 mb-2">About Me</h1>
-                    <p className="text-lg text-blue-700">Hello everyone! I am <span className="font-semibold text-blue-500">C S Vaishakh</span>, a FullStack-Developer and an Artificial Intelligence & Data Science Student</p>
+                    <h1 className="text-4xl font-extrabold text-blue-900 mb-2 tracking-tight drop-shadow-lg">
+                        About Me
+                    </h1>
+                    <p className="text-lg text-blue-700 leading-relaxed">
+                        👋 Hi, I'm C S Vaishakh — Full Stack Developer and AI & Data Science student. I'm passionate about building intelligent systems, exploring emerging technologies, and turning ideas into impactful solutions. With a focus on innovation and thoughtful design, I love creating experiences that matter. Let's connect and shape what's next. 🚀
+                    </p>
                 </div>
                 <div>
                     <h3 className="text-2xl font-semibold text-blue-900 mb-4">Education</h3>
                     <ul>
                         <li className="mb-4">
                             <div>
-                                <button className="flex items-center gap-3 px-4 py-2 border-2 border-blue-300 text-blue-900 bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-lg transition-all duration-300 font-medium">
-                                    <Link href='https://sjcetpalai.ac.in/' className="flex items-center gap-2">
-                                        <Image src={'/sjcet.png'} alt={"SJCET"} height={40} width={40} className="rounded-full border border-blue-200 bg-white"/>
-                                        St Josephs College Of Engineering And Technology, Palai
+                                <motion.button
+                                    whileHover={{ scale: 1.04, boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.2)" }}
+                                    whileTap={{ scale: 0.98 }}
+                                    className="flex items-center gap-3 px-4 py-2 text-blue-900 bg-gradient-to-r from-blue-100 via-white to-blue-300 rounded-xl shadow-lg transition-all duration-300 font-medium border border-blue-200"
+                                >
+                                    <Link href='https://sjcetpalai.ac.in/' className="flex flex-col items-center gap-2">
+                                        <motion.div
+                                            initial={{ scale: 0.8, opacity: 0 }}
+                                            animate={{ scale: 1, opacity: 1 }}
+                                            transition={{ duration: 0.7, delay: 0.3, type: "spring" }}
+                                        >
+                                            <Image src={'/sjcet.png'} alt={"SJCET"} height={220} width={220} className="rounded-lg border-2 border-blue-300 bg-white shadow-md hover:shadow-2xl transition-shadow duration-300"/>
+                                        </motion.div>
+                                        <p className="text-base mt-2 text-blue-800 font-semibold tracking-wide text-center">
+                                            B.Tech Artificial intelligence & Data Science
+                                        </p>
                                     </Link>
-                                </button>
+                                </motion.button>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
