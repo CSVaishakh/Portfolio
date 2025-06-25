@@ -9,13 +9,13 @@ const Header: React.FC = () => {
                 <div className="text-3xl font-bold text-black font-[system-ui,-apple-system,'SF Pro Display',sans-serif]">C S Vaishakh</div>
                 <div className="flex items-center">
                     <div className="flex gap-2">
-                        <button className="px-5 py-2 border-2 border-blue-400 text-black hover:text-black hover:bg-blue-300 hover:border-blue-600 transition-all duration-300 transform hover:scale-105 font-medium font-[system-ui,-apple-system,'SF Pro Display',sans-serif]">
+                        <button className="px-5 py-2 border-2 border-blue-400 text-black hover:text-black hover:bg-blue-300 hover:border-blue-600 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium font-[system-ui,-apple-system,'SF Pro Display',sans-serif]">
                             <Link href='#about'>About</Link>
                         </button>
-                        <button className="px-5 py-2 border-2 border-blue-400 text-black hover:text-black hover:bg-blue-300 hover:border-blue-600 transition-all duration-300 transform hover:scale-105 font-medium font-[system-ui,-apple-system,'SF Pro Display',sans-serif]">
+                        <button className="px-5 py-2 border-2 border-blue-400 text-black hover:text-black hover:bg-blue-300 hover:border-blue-600 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium font-[system-ui,-apple-system,'SF Pro Display',sans-serif]">
                             <Link href='/projects'>Projects</Link>
                         </button>
-                        <button className="px-5 py-2 border-2 border-blue-400 text-black hover:text-black hover:bg-blue-300 hover:border-blue-600 transition-all duration-300 transform hover:scale-105 font-medium font-[system-ui,-apple-system,'SF Pro Display',sans-serif]">
+                        <button className="px-5 py-2 border-2 border-blue-400 text-black hover:text-black hover:bg-blue-300 hover:border-blue-600 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium font-[system-ui,-apple-system,'SF Pro Display',sans-serif]">
                             <Link href='#contact'>Contact</Link>
                         </button>
                     </div>
