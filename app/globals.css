@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #101624;
+  --foreground: #f5f6fa;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --primary-blue: #183153;
+  --accent-blue: #1e293b;
+  --highlight-blue: #2563eb;
+  --black: #0a0a0a;
+  --white: #ffffff;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -12,12 +17,18 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f5f6fa;
+    --primary-blue: #0d1a2f;
+    --accent-blue: #1e293b;
+    --highlight-blue: #2563eb;
+    --black: #000000;
+    --white: #ffffff;
   }
 }
 
 body {
-  background: var(--background);
+  /* Set the background to the same gradient as the components */
+  background: linear-gradient(to right, #dbeafe, #fff, #93c5fd);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -100,6 +111,15 @@ body {
   }
 }
 
+@keyframes floatBar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /* Animation classes */
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
@@ -126,6 +146,10 @@ body {
   animation: particles 15s linear infinite;
 }
 
+.animate-float-bar {
+  animation: floatBar 3s ease-in-out infinite;
+}
+
 /* Staggered animation delays */
 .animate-delay-100 {
   animation-delay: 0.1s;
@@ -149,7 +173,7 @@ body {
 
 /* Background effects */
 .bg-animated {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, var(--primary-blue), var(--highlight-blue), var(--accent-blue), var(--black));
   background-size: 400% 400%;
   animation: gradientShift 8s ease infinite;
 }
