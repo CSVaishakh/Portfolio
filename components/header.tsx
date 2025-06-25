@@ -4,7 +4,7 @@ import React from "react";
 
 const Header: React.FC = () => {
     return(
-        <section className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 flex gap-6 bg-gradient-to-r from-blue-100 via-white to-blue-200 backdrop-blur-md rounded-2xl shadow-xl px-8 py-4 animate-float-bar">
+        <section className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 flex gap-6 bg-gradient-to-r from-blue-100 via-white to-blue-100 backdrop-blur-md rounded-2xl shadow-xl px-8 py-4 animate-float-bar">
             <button className="text-blue-900 font-medium rounded-lg px-1 py-1 text-xl transition-all hover:bg-blue-100 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-200">
                 <Link href='#about'>About</Link>
             </button>
