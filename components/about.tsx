@@ -18,7 +18,7 @@ const About: React.FC = () => {
                         About Me
                     </h1>
                     <p className="text-lg text-blue-700 leading-relaxed">
-                        👋 Hi, I'm C S Vaishakh — Full Stack Developer and AI & Data Science student. I'm passionate about building intelligent systems, exploring emerging technologies, and turning ideas into impactful solutions. With a focus on innovation and thoughtful design, I love creating experiences that matter. Let's connect and shape what's next. 🚀
+                        👋 Hi, I'm C S Vaishakh — Full Stack Developer and a Third-year Artificial Intelligence & Data Science student. I'm passionate about building intelligent systems, exploring emerging technologies, and turning ideas into impactful solutions. With a focus on innovation and thoughtful design, I love creating experiences that matter. Let's connect and shape what's next. 🚀
                     </p>
                 </div>
                 <div>
@@ -26,22 +26,18 @@ const About: React.FC = () => {
                     <ul>
                         <li className="mb-4">
                             <div>
-                                <motion.button
-                                    whileHover={{ scale: 1.04, boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.2)" }}
-                                    whileTap={{ scale: 0.98 }}
-                                    className="flex items-center gap-3 px-4 py-2 text-blue-900 bg-gradient-to-r from-blue-100 via-white to-blue-300 rounded-xl shadow-lg transition-all duration-300 font-medium border border-blue-200"
-                                >
-                                    <Link href='https://sjcetpalai.ac.in/' className="flex flex-col items-center gap-2">
-                                        <motion.div
-                                            initial={{ scale: 0.8, opacity: 0 }}
-                                            animate={{ scale: 1, opacity: 1 }}
-                                            transition={{ duration: 0.7, delay: 0.3, type: "spring" }}
-                                        >
-                                            <Image src={'/sjcet.png'} alt={"SJCET"} height={220} width={220} className="rounded-lg border-2 border-blue-300 bg-white shadow-md hover:shadow-2xl transition-shadow duration-300"/>
+                                <motion.button whileHover={{ scale: 1.04, boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.2)" }}whileTap={{ scale: 0.98 }}className="flex items-center gap-6 px-6 py-4 text-blue-900 bg-gradient-to-r from-blue-100 via-white to-blue-300 rounded-xl shadow-lg transition-all duration-300 font-medium border border-blue-200 w-full">
+                                    <Link href='https://sjcetpalai.ac.in/' className="flex items-center gap-6 w-full">
+                                        <motion.div initial={{ scale: 0.8, opacity: 0 }}animate={{ scale: 1, opacity: 1 }}transition={{ duration: 0.7, delay: 0.3, type: "spring" }} className="flex-shrink-0">
+                                            <Image src={'/sjcet.png'} alt={"SJCET"} height={100} width={100} className="rounded-lg border-2 border-blue-300 bg-white shadow-md hover:shadow-2xl transition-shadow duration-300"/>
                                         </motion.div>
-                                        <p className="text-base mt-2 text-blue-800 font-semibold tracking-wide text-center">
-                                            B.Tech Artificial intelligence & Data Science
-                                        </p>
+                                        <div className="flex flex-col items-start text-left">
+                                            <div className="flex items-center justify-between w-full mb-2 gap-4">
+                                                <h3 className="text-lg font-bold text-blue-900">St Joseph's College Of Engineering & Technology</h3>
+                                                <p className="text-base text-blue-700 font-medium">2023-2027</p>
+                                            </div>
+                                            <p className="text-base text-blue-800 font-semibold">B.Tech Artificial Intelligence & Data Science</p>
+                                        </div>
                                     </Link>
                                 </motion.button>
                             </div>
