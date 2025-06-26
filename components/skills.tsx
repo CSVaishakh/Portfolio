@@ -53,7 +53,7 @@ const Skills: React.FC = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-16 px-8 rounded-2xl mt-8 shadow-2xl border border-blue-200"
+            className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-16 px-8 "
         >
             <div className="max-w-4xl mx-auto">
                 <motion.div
@@ -84,10 +84,11 @@ const Skills: React.FC = () => {
                         >
                             <motion.span
                                 whileHover={{
-                                    scale: 1.05
+                                    scale: 1.05,
+                                    backgroundColor: "rgba(59, 130, 246, 0.1)"
                                 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="inline-flex items-center justify-center px-4 py-2 rounded-lg cursor-pointer transition-all duration-200 bg-blue-500 hover:bg-blue-600 border-2 border-blue-600 hover:border-blue-700 text-black font-semibold text-base min-w-[120px] flex-shrink-0 shadow-sm"
+                                className="inline-flex items-center justify-center px-4 py-2 rounded-lg cursor-pointer transition-all duration-200 bg-blue-100 hover:bg-blue-200 border-2 border-blue-300 hover:border-blue-400 text-black font-semibold text-base min-w-[120px] flex-shrink-0 shadow-sm"
                             >
                                 {category.title}
                             </motion.span>
@@ -101,8 +102,11 @@ const Skills: React.FC = () => {
                                             backgroundColor: "rgba(59, 130, 246, 0.1)"
                                         }}
                                         whileTap={{ scale: 0.98 }}
-                                        className="inline-flex items-center justify-center px-3 py-1 rounded-lg cursor-pointer transition-all duration-200 bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-gray-300">
-                                        <span className="text-black font-medium hover:text-gray-800 text-sm">{skill}</span>
+                                        className="inline-flex items-center justify-center px-3 py-1 rounded-lg cursor-pointer transition-all duration-200 bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-gray-300"
+                                    >
+                                        <span className="text-black font-medium hover:text-gray-800 text-sm">
+                                            {skill}
+                                        </span>
                                     </motion.span>
                                 ))}
                             </motion.div>

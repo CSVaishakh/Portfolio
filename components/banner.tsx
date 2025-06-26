@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Banner: React.FC = () => {
     return (
-        <section className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-20 px-8 border-2 border-blue-200 font-sans min-h-screen flex items-center" style={{ fontFamily: 'SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+        <section className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-20 px-8 font-sans min-h-screen flex items-center" style={{ fontFamily: 'SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
             <div className="max-w-7xl mx-auto w-full">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
                     <div className="flex-1 space-y-8 text-center lg:text-left">
