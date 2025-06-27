@@ -7,7 +7,6 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
     <html lang="en">
       <body>
         {children}
-        <Footer/>
       </body>
     </html>
   );
