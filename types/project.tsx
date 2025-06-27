@@ -3,7 +3,7 @@ export type Project = {
     subtitle:string;
     duration:string;
     description:string;
-    keyfeatures: string[];
+    keyFeatures: string[];
     technologies: string[];
     url: string;
 }
