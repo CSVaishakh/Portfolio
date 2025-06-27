@@ -7,19 +7,21 @@ const Banner: React.FC = () => {
         <section className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-20 px-8 font-sans min-h-screen flex items-center" style={{ fontFamily: 'SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
             <div className="max-w-7xl mx-auto w-full">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-                    <div className="flex-1 space-y-8 text-center lg:text-left">
+                    <div className="flex-1 space-y-8 lg:text-left">
                         <div className="space-y-4">
                             <h3 className="text-2xl font-semibold text-black animate-fade-in-up animate-delay-100">👋Hello, I'm</h3>
                             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-black font-[system-ui,-apple-system,'SF Pro Display'] animate-fade-in-up animate-delay-200 leading-tight">C S Vaishakh</h1>
                             <p className="text-xl text-black animate-fade-in-up animate-delay-300 leading-relaxed">🧑‍💻Full Stack Developer | 📚Artificial Intelligence Student</p>
                         </div>
-                        <div className="flex gap-4 mt-8 animate-slide-in-left animate-delay-400">
-                            <Link href='/projects'>
-                                <button className="px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg">Projects</button>
-                            </Link>
-                            <Link href="#contact">
-                                <button className="px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg">Contact</button>
-                            </Link>
+                        <div className="flex flex-col items-center lg:items-start mt-8 animate-slide-in-left animate-delay-400">
+                            <div className="flex gap-4 w-full justify-center lg:justify-start">
+                                <Link href='/projects'>
+                                    <button className="px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg">Projects</button></Link>
+                                <Link href="#contact">
+                                    <button className="px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg">Contact</button></Link>
+                                <Link href={'/Resume.pdf'} target="_blank" rel="noopener noreferrer">
+                                <button className="px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg">Resume</button></Link>
+                            </div>
                         </div>
                     </div>
                     <div className="flex-shrink-0 lg:ml-8 animate-fade-in-up animate-delay-500">
