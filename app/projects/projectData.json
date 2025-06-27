@@ -1,0 +1,52 @@
+{
+  "projects": {
+    "1": {
+      "title": "iSense",
+      "subtitle": "Decoding vision, delivering insight",
+      "duration": "May 2025 – June 2025",
+      "description": "iSense is an AI-powered image analysis platform that integrates computer vision and natural language processing. Users can upload images and ask questions in natural language to receive intelligent, contextual answers, powered by the LLaMA 4 Scout model on Groq's high-performance infrastructure.",
+      "keyFeatures": [
+        "Image understanding using Groq's LLaMA 4 Scout model",
+        "Conversational Q&A about image content",
+        "Real-time image upload and preview with support for multiple formats",
+        "Secure user authentication through Clerk",
+        "Fully responsive and animated UI built with Tailwind CSS",
+        "Planned support for persistent chat history"
+      ],
+      "technologies": [
+        "Next.js 15",
+        "TypeScript",
+        "Tailwind CSS",
+        "Groq AI",
+        "LLaMA 4 Scout",
+        "Clerk",
+        "Lucide React"
+      ],
+      "url": "https://i-sense.vercel.app/"
+    },
+    "2": {
+      "title": "Tazkz",
+      "subtitle": "Not the regular task manager",
+      "duration": "June 2025",
+      "description": "Tazkz is a modern task and note-taking application that reimagines productivity by combining tasks and thoughts in a single, unified interface. Built with Next.js 15 and Tailwind CSS, it provides a fast, clean, and intuitive experience to help users plan, manage, and track their day effectively.",
+      "keyFeatures": [
+        "Smart task management with parent-child hierarchy, progress tracking, and priority-based sorting",
+        "Contextual note-taking directly within tasks",
+        "Real-time progress visualization using interactive sliders and indicators",
+        "Secure authentication with protected routes powered by Clerk",
+        "Responsive and animated UI built using shadcn/ui",
+        "Robust full-stack setup using Next.js 15 (App Router), Supabase (PostgreSQL), and TypeScript"
+      ],
+      "technologies": [
+        "Next.js 15",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase",
+        "PostgreSQL",
+        "Clerk",
+        "shadcn/ui"
+      ],
+      "url": "https://tazkz.vercel.app/"
+    }
+  }
+}
