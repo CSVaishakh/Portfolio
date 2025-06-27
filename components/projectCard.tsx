@@ -1,13 +1,6 @@
 import React from "react";
+import { Project } from "@/types/project";
 
-type Project = {
-    title: string;
-    subtitle:string;
-    duration:string;
-    descreption:string;
-    keyfeatures: string[];
-    technologies: string[];
-}
 
 const ProjectCard: React.FC<{project: Project}> = ({project}) => {
     return(
@@ -27,6 +20,9 @@ const ProjectCard: React.FC<{project: Project}> = ({project}) => {
                 <ul>
                     {project.technologies.map((technology, index) => (<li key={index}>{technology}</li>))}
                 </ul>
+            </div>
+            <div>
+                <p>The application is live at : {project.url}</p>
             </div>
         </section>
     )
