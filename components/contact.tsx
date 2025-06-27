@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Contact: React.FC = () => {
     return(
@@ -16,30 +17,20 @@ const Contact: React.FC = () => {
                         </div>
                     </div>
                     
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12 animate-slide-in-left animate-delay-300">
+                    <div className="inline-flex flex-row justify-center items-center mt-5 mb-3 animate-slide-in-left animate-delay-300 bg-white/80 backdrop-blur-md rounded-2xl shadow-xl px-2 py-2 gap-0 border border-blue-200">
                         <Link href='https://api.whatsapp.com/send?phone=917511137620&text=Hello!' target="_blank" rel="noopener noreferrer">
-                            <button className="group px-8 py-4 border-2 border-green-400 text-black bg-white hover:text-white hover:bg-green-500 hover:border-green-600 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium shadow-lg hover:shadow-xl w-full sm:w-auto min-w-[140px]">
-                                <span className="flex items-center justify-center gap-2">
-                                    <span className="text-xl">💬</span>
-                                    WhatsApp
-                                </span>
+                            <button className="group flex items-center justify-center px-4 py-3 text-black bg-white hover:text-white hover:bg-green-500 rounded-l-xl transition-all duration-300 font-medium shadow-none min-w-[48px] border-r border-blue-200">
+                                <Image src={'/whatsapp.svg'} alt="WhatsApp" height={22} width={22}/>
                             </button>
                         </Link>
-                        
                         <Link href='https://x.com/vaishakh_CS' target="_blank" rel="noopener noreferrer">
-                            <button className="group px-8 py-4 border-2 border-blue-400 text-black bg-white hover:text-white hover:bg-blue-500 hover:border-blue-600 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium shadow-lg hover:shadow-xl w-full sm:w-auto min-w-[140px]">
-                                <span className="flex items-center justify-center gap-2">
-                                    Twitter (X)
-                                </span>
+                            <button className="group flex items-center justify-center px-4 py-3 text-black bg-white hover:text-white hover:bg-blue-500 transition-all duration-300 font-medium shadow-none min-w-[48px] border-r border-blue-200">
+                                <Image src={'/x.svg'} alt="X" height={22} width={22}/>
                             </button>
                         </Link>
-                        
                         <Link href='mailto:contactvaishakh@gmail.com' target="_blank" rel="noopener noreferrer">
-                            <button className="group px-8 py-4 border-2 border-red-400 text-black bg-white hover:text-white hover:bg-red-500 hover:border-red-600 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium shadow-lg hover:shadow-xl w-full sm:w-auto min-w-[140px]">
-                                <span className="flex items-center justify-center gap-2">
-                                    <span className="text-xl">✉️</span>
-                                    Email
-                                </span>
+                            <button className="group flex items-center justify-center px-4 py-3 text-black bg-white hover:text-white hover:bg-red-500 rounded-r-xl transition-all duration-300 font-medium shadow-none min-w-[48px]">
+                                <Image src={'/gmail.svg'} alt="Email" height={22} width={22}/>
                             </button>
                         </Link>
                     </div>
