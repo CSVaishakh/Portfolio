@@ -12,7 +12,7 @@ const ProjectCard: React.FC<{project: Project}> = ({project}) => {
             <div>
                 <p>Key Features</p>
                 <ul>
-                    {project.keyfeatures.map((feature, index) => (<li key={index}>{feature}</li>))}
+                    {project.keyFeatures.map((feature, index) => (<li key={index}>{feature}</li>))}
                 </ul>
             </div>
             <div>
