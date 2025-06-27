@@ -4,7 +4,7 @@ import { Project } from "@/types/project";
 
 const ProjectCard: React.FC<{project: Project}> = ({project}) => {
     return (
-        <section className="bg-gradient-to-r from-blue-100 via-white to-blue-300 rounded-2xl shadow-xl border border-blue-200 p-8 mb-8 transition-all hover:shadow-2xl hover:-translate-y-1">
+        <section className="flex flex-col justify-between bg-gradient-to-r from-blue-100 via-white to-blue-300 rounded-2xl shadow-xl border border-blue-200 p-8 transition-all hover:shadow-2xl hover:-translate-y-1 h-full min-h-[650px]">
             <h3 className="text-3xl font-bold text-black mb-2 tracking-tight drop-shadow">{project.title}</h3>
             <p className="text-lg text-black/80 mb-1">{project.subtitle}</p>
             <p className="text-sm text-blue-700 mb-4">{project.duration}</p>
