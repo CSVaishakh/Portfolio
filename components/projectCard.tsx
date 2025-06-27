@@ -8,7 +8,7 @@ const ProjectCard: React.FC<{project: Project}> = ({project}) => {
             <h3>{project.title}</h3>
             <p>{project.subtitle}</p>
             <p>{project.duration}</p>
-            <p>{project.descreption}</p>
+            <p>{project.description}</p>
             <div>
                 <p>Key Features</p>
                 <ul>

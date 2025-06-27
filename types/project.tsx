@@ -2,7 +2,7 @@ export type Project = {
     title: string;
     subtitle:string;
     duration:string;
-    descreption:string;
+    description:string;
     keyfeatures: string[];
     technologies: string[];
     url: string;
