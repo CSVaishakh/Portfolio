@@ -36,9 +36,9 @@ const Contact: React.FC = () => {
                     </div>
                     
                     <div className="mt-16 p-8 bg-white bg-opacity-60 backdrop-blur-sm rounded-2xl shadow-lg border border-blue-200 animate-fade-in-up animate-delay-500">
-                        <h3 className="text-2xl font-semibold text-black mb-4">Let's Connect! 🤝</h3>
+                        <h3 className="text-2xl font-semibold text-black mb-4">Let&apos;s Connect! 🤝</h3>
                         <p className="text-lg text-black leading-relaxed">
-                            I'm always excited to discuss new opportunities, collaborate on interesting projects, 
+                            I&apos;m always excited to discuss new opportunities, collaborate on interesting projects, 
                             or just have a chat about technology and innovation. Feel free to reach out through 
                             any of the platforms above!
                         </p>

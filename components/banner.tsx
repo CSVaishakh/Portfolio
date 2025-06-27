@@ -9,7 +9,7 @@ const Banner: React.FC = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
                     <div className="flex-1 space-y-8 lg:text-left">
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-semibold text-black animate-fade-in-up animate-delay-100">👋Hello, I'm</h3>
+                            <h3 className="text-2xl font-semibold text-black animate-fade-in-up animate-delay-100">👋Hello, I&apos;m</h3>
                             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-black font-[system-ui,-apple-system,'SF Pro Display'] animate-fade-in-up animate-delay-200 leading-tight">C S Vaishakh</h1>
                             <p className="text-xl text-black animate-fade-in-up animate-delay-300 leading-relaxed">🧑‍💻Full Stack Developer | 📚Artificial Intelligence Student</p>
                         </div>

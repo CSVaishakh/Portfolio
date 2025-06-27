@@ -10,15 +10,14 @@ const About: React.FC = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="bg-gradient-to-r from-blue-100 via-white to-blue-300"
-        >
+            className="bg-gradient-to-r from-blue-100 via-white to-blue-300">
             <div className="max-w-4xl mx-auto">
                 <div className="mb-8">
                     <h1 className="text-4xl font-extrabold text-black mb-2 tracking-tight drop-shadow-lg">
                         About Me
                     </h1>
                     <p className="text-lg text-black leading-relaxed">
-                        👋 Hi, I'm C S Vaishakh — Full Stack Developer and a Third-year Artificial Intelligence & Data Science student. I'm passionate about building intelligent systems, exploring emerging technologies, and turning ideas into impactful solutions. With a focus on innovation and thoughtful design, I love creating experiences that matter. Let's connect and shape what's next. 🚀
+                        👋 Hi, I&apos;m C S Vaishakh — Full Stack Developer and a Third-year Artificial Intelligence &amp; Data Science student. I&apos;m passionate about building intelligent systems, exploring emerging technologies, and turning ideas into impactful solutions. With a focus on innovation and thoughtful design, I love creating experiences that matter. Let&apos;s connect and shape what&apos;s next. 🚀
                     </p>
                 </div>
                 <div>
@@ -33,7 +32,7 @@ const About: React.FC = () => {
                                         </motion.div>
                                         <div className="flex flex-col items-start text-left">
                                             <div className="flex items-center justify-between w-full mb-2 gap-4">
-                                                <h3 className="text-lg font-bold text-black">St Joseph's College Of Engineering & Technology</h3>
+                                                <h3 className="text-lg font-bold text-black">St Joseph&apos;s College Of Engineering &amp; Technology</h3>
                                                 <p className="text-base text-black font-medium">2023-2027</p>
                                             </div>
                                             <p className="text-base text-black font-semibold">B.Tech Artificial Intelligence & Data Science</p>

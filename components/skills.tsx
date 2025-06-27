@@ -76,7 +76,7 @@ const Skills: React.FC = () => {
                     animate="visible"
                     className="space-y-6"
                 >
-                    {skillCategories.map((category, categoryIndex) => (
+                    {skillCategories.map((category) => (
                         <motion.div
                             key={category.title}
                             variants={itemVariants}
@@ -93,7 +93,7 @@ const Skills: React.FC = () => {
                                 {category.title}
                             </motion.span>
                             <motion.div variants={containerVariants} className="flex flex-wrap gap-2">
-                                {category.skills.map((skill, skillIndex) => (
+                                {category.skills.map((skill) => (
                                     <motion.span
                                         key={skill}
                                         variants={skillVariants}
