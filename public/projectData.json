@@ -22,8 +22,7 @@
         "Clerk",
         "Lucide React"
       ],
-      "note": "Enables users to extract deep insights from images through a seamless, chat-based interface that's optimized for accessibility and speed.",
-      "builderNote": "Designed with a focus on performance and user-centric design. Actively being developed and open to collaboration and feedback."
+      "url": "https://i-sense.vercel.app/"
     },
     "2": {
       "title": "Tazkz",
@@ -47,8 +46,7 @@
         "Clerk",
         "shadcn/ui"
       ],
-      "note": "Ideal for organizing tasks, managing goals, or capturing spontaneous ideas, Tazkz keeps everything in sync and streamlined.",
-      "builderNote": "Built to explore and apply modern full-stack development in a real-world context. Open to feedback, collaboration, and new feature suggestions."
+      "url": "https://tazkz.vercel.app/"
     }
   }
 }
