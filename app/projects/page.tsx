@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ProjectCard from "@/components/projectCard";
 import { Project } from "@/types/project";
 import projectData from './projectData.json'
