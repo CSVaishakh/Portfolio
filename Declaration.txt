@@ -1,0 +1,5 @@
+Declaration of Ownership and Inspiration
+
+I hereby declare that all the designs and components used in this project are created and owned by me. While the work is original, I acknowledge drawing inspiration from various resources available on the internet and utilizing AI tools to assist in the designing and design implemntation phases of the development process. Any resemblance to existing works is purely coincidental or a result of such inspirations. 
+
+All rights to the created assets and code remain with me, C S Vaishakh.
