@@ -4,23 +4,23 @@ import Link from "next/link";
 
 const Banner: React.FC = () => {
     return (
-        <section className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-20 px-8 font-sans min-h-screen flex items-center" style={{ fontFamily: 'SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+        <section className="bg-gradient-to-r from-blue-100 via-white to-blue-300 py-12 sm:py-20 px-4 sm:px-8 font-sans min-h-screen flex items-center" style={{ fontFamily: 'SF Pro Display, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
             <div className="max-w-7xl mx-auto w-full">
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-                    <div className="flex-1 space-y-8 lg:text-left">
-                        <div className="space-y-4">
-                            <h3 className="text-2xl font-semibold text-black animate-fade-in-up animate-delay-100">👋Hello, I&apos;m</h3>
-                            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-black font-[system-ui,-apple-system,'SF Pro Display'] animate-fade-in-up animate-delay-200 leading-tight">C S Vaishakh</h1>
-                            <p className="text-xl text-black animate-fade-in-up animate-delay-300 leading-relaxed">🧑‍💻Full Stack Developer | 📚Artificial Intelligence Student</p>
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-6">
+                    <div className="flex-1 space-y-6 sm:space-y-8 w-full lg:text-left text-center">
+                        <div className="space-y-2 sm:space-y-4">
+                            <h3 className="text-xl sm:text-2xl font-semibold text-black animate-fade-in-up animate-delay-100">👋Hello, I&apos;m</h3>
+                            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-black font-[system-ui,-apple-system,'SF Pro Display'] animate-fade-in-up animate-delay-200 leading-tight">C S Vaishakh</h1>
+                            <p className="text-base sm:text-xl text-black animate-fade-in-up animate-delay-300 leading-relaxed">🧑‍💻Full Stack Developer | 📚Artificial Intelligence Student</p>
                         </div>
-                        <div className="flex flex-col items-center lg:items-start mt-8 animate-slide-in-left animate-delay-400">
-                            <div className="flex gap-4 w-full justify-center lg:justify-start">
+                        <div className="flex flex-col items-center lg:items-start mt-6 sm:mt-8 animate-slide-in-left animate-delay-400">
+                            <div className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start">
                                 <Link href='/projects'>
-                                    <button className="px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg">Projects</button></Link>
+                                    <button className="px-6 sm:px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg w-full sm:w-auto">Projects</button></Link>
                                 <Link href="#contact">
-                                    <button className="px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg">Contact</button></Link>
+                                    <button className="px-6 sm:px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg w-full sm:w-auto">Contact</button></Link>
                                 <Link href={'/Resume.pdf'} target="_blank" rel="noopener noreferrer">
-                                <button className="px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg">Resume</button></Link>
+                                <button className="px-6 sm:px-8 py-3 border-2 border-blue-300 text-black bg-white hover:text-white hover:bg-blue-400 hover:border-blue-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 font-medium font-[system-ui,-apple-system,'SF Pro Display'] shadow hover:shadow-lg w-full sm:w-auto">Resume</button></Link>
                             </div>
                         </div>
                     </div>
