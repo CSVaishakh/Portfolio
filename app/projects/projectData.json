@@ -51,8 +51,8 @@
     "3": {
       "title": "HackSphere 2025 Landing Page",
       "subtitle": "A responsive landing page for a global hackathon event",
-      "duration": "2025",
-      "description": "A responsive landing page for a fictional global hackathon event built with React and TypeScript. This project was created as an internship task to demonstrate front-end development skills, featuring modern React with TypeScript and functional components.",
+      "duration": "May 2025",
+      "description": "A responsive landing page for a fictional global hackathon event built with React and TypeScript. This project was created as an internship screening task to demonstrate front-end development skills, featuring modern React with TypeScript and functional components.",
       "keyFeatures": [
         "Modern React with TypeScript and functional components",
         "Responsive design that works across mobile, tablet, and desktop",
