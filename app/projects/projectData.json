@@ -47,6 +47,30 @@
         "shadcn/ui"
       ],
       "url": "https://tazkz.vercel.app/"
+    },
+    "3": {
+      "title": "HackSphere 2025 Landing Page",
+      "subtitle": "A responsive landing page for a global hackathon event",
+      "duration": "2025",
+      "description": "A responsive landing page for a fictional global hackathon event built with React and TypeScript. This project was created as an internship task to demonstrate front-end development skills, featuring modern React with TypeScript and functional components.",
+      "keyFeatures": [
+        "Modern React with TypeScript and functional components",
+        "Responsive design that works across mobile, tablet, and desktop",
+        "Clean, modular CSS with separate stylesheets for each component",
+        "Header with navigation links to different sections",
+        "Hero section with striking banner, event name, tagline, and registration CTA",
+        "About section with detailed hackathon description",
+        "FAQ section answering common questions",
+        "Contacts section with email and phone contact information",
+        "Footer with copyright information and social media handles"
+      ],
+      "technologies": [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "CSS3"
+      ],
+      "url": "https://hacksphere2025-vaishakh.vercel.app/"
     }
   }
 }
