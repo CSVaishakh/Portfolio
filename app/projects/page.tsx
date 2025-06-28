@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
 
     return(
         <section className="py-8 px-2 flex flex-col items-center">
-            <div className="w-full max-w-6xl flex flex-col items-center">
+            <div className="w-full max-w-screen-xl flex flex-col items-center">
                 <div className="mb-12 text-center">
                     <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-black font-[system-ui,-apple-system,'SF Pro Display'] animate-fade-in-up animate-delay-200 leading-tight tracking-tight drop-shadow-lg">
                         Projects
@@ -29,24 +29,30 @@ const Projects: React.FC = () => {
                     <Sidebar />
                 </div>
                 
-                {/* Desktop Layout: Two Columns */}
+                {/* Desktop Layout: Three Columns */}
                 <div className="hidden sm:block w-full">
                     {(() => {
                         const rows = [];
-                        for (let i = 0; i < data.length; i += 2) {
-                            rows.push(data.slice(i, i + 2));
+                        for (let i = 0; i < data.length; i += 3) {
+                            rows.push(data.slice(i, i + 3));
                         }
                         return rows.map((row, rowIndex) => (
-                            <div key={rowIndex} className="w-full flex flex-row justify-center items-stretch gap-8 mb-8">
+                            <div key={rowIndex} className="w-full flex flex-row justify-center items-stretch gap-6 mb-8">
                                 <div className="flex-1 max-w-xl">
                                     <ProjectCard project={row[0]} />
                                 </div>
-                                {row.length === 2 ? (
+                                {row.length >= 2 ? (
                                     <div className="flex-1 max-w-xl">
                                         <ProjectCard project={row[1]} />
                                     </div>
                                 ) : (
-                                    // If only one card in the last row, fill space
+                                    <div className="flex-1 max-w-xl" />
+                                )}
+                                {row.length === 3 ? (
+                                    <div className="flex-1 max-w-xl">
+                                        <ProjectCard project={row[2]} />
+                                    </div>
+                                ) : (
                                     <div className="flex-1 max-w-xl" />
                                 )}
                                 {rowIndex === Math.floor(rows.length / 2) && <Sidebar />}
