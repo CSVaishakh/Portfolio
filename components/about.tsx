@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Brain, BarChart3, DollarSign, TrendingUp, Network, Code } from "lucide-react";
 
 const About: React.FC = () => {
     return(
@@ -19,6 +20,89 @@ const About: React.FC = () => {
                     <p className="text-base sm:text-lg text-black leading-relaxed">
                         👋 Hi, I&apos;m C S Vaishakh — Full Stack Developer and a Third-year Artificial Intelligence &amp; Data Science student. I&apos;m passionate about building intelligent systems, exploring emerging technologies, and turning ideas into impactful solutions. With a focus on innovation and thoughtful design, I love creating experiences that matter. Let&apos;s connect and shape what&apos;s next. 🚀
                     </p>
+                </div>
+                <div className="mb-8">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-black mb-6">My Interests</h3>
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
+                            whileHover={{ scale: 1.1, rotate: 2 }} 
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 border-2 border-blue-400 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                        >
+                            <div className="flex items-center gap-2">
+                                <Brain className="w-6 h-6 text-blue-500 group-hover:text-blue-600 transition-colors duration-300" />
+                                <span className="text-sm sm:text-base font-semibold text-blue-900 group-hover:text-blue-700">Artificial Intelligence</span>
+                            </div>
+                        </motion.div>
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            whileHover={{ scale: 1.1, rotate: -2 }} 
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 border-2 border-green-400 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                        >
+                            <div className="flex items-center gap-2">
+                                <BarChart3 className="w-6 h-6 text-green-500 group-hover:text-green-600 transition-colors duration-300" />
+                                <span className="text-sm sm:text-base font-semibold text-green-900 group-hover:text-green-700">Data Science</span>
+                            </div>
+                        </motion.div>
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.3 }}
+                            whileHover={{ scale: 1.1, rotate: 2 }} 
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 border-2 border-yellow-400 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                        >
+                            <div className="flex items-center gap-2">
+                                <DollarSign className="w-6 h-6 text-yellow-500 group-hover:text-yellow-600 transition-colors duration-300" />
+                                <span className="text-sm sm:text-base font-semibold text-yellow-900 group-hover:text-yellow-700">Finance</span>
+                            </div>
+                        </motion.div>
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                            whileHover={{ scale: 1.1, rotate: -2 }} 
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 border-2 border-purple-400 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                        >
+                            <div className="flex items-center gap-2">
+                                <TrendingUp className="w-6 h-6 text-purple-500 group-hover:text-purple-600 transition-colors duration-300" />
+                                <span className="text-sm sm:text-base font-semibold text-purple-900 group-hover:text-purple-700">Quant Analytics</span>
+                            </div>
+                        </motion.div>
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.5 }}
+                            whileHover={{ scale: 1.1, rotate: 2 }} 
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 border-2 border-red-400 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                        >
+                            <div className="flex items-center gap-2">
+                                <Network className="w-6 h-6 text-red-500 group-hover:text-red-600 transition-colors duration-300" />
+                                <span className="text-sm sm:text-base font-semibold text-red-900 group-hover:text-red-700">System Design</span>
+                            </div>
+                        </motion.div>
+                        <motion.div 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                            whileHover={{ scale: 1.1, rotate: -2 }} 
+                            whileTap={{ scale: 0.95 }}
+                            className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 border-2 border-indigo-400 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                        >
+                            <div className="flex items-center gap-2">
+                                <Code className="w-6 h-6 text-indigo-500 group-hover:text-indigo-600 transition-colors duration-300" />
+                                <span className="text-sm sm:text-base font-semibold text-indigo-900 group-hover:text-indigo-700">Software Engineering</span>
+                            </div>
+                        </motion.div>
+                    </div>
                 </div>
                 <div>
                     <h3 className="text-xl sm:text-2xl font-semibold text-black mb-4">Education</h3>
