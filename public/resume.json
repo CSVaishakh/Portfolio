@@ -1,0 +1,190 @@
+{
+  "personalInfo": {
+    "name": "C S Vaishakh",
+    "title": "Full Stack Developer",
+    "subtitle": "Artificial Intelligence Student",
+    "email": "contactvaishakh@gmail.com",
+    "phone": "+91 7511137620",
+    "location": "India",
+    "profileImage": "/myself.png",
+    "summary": "Full Stack Developer and Third-year Artificial Intelligence & Data Science student passionate about building intelligent systems, exploring emerging technologies, and turning ideas into impactful solutions. With a focus on innovation and thoughtful design, I love creating experiences that matter."
+  },
+  "socialLinks": {
+    "linkedin": "https://www.linkedin.com/in/csvaishakh/",
+    "github": "https://github.com/CSVaishakh",
+    "portfolio": "https://vaishakh.live/"
+  },
+  "education": [
+    {
+      "institution": "St Joseph's College Of Engineering & Technology",
+      "degree": "B.Tech Artificial Intelligence & Data Science",
+      "duration": "2023-2027",
+      "status": "Pursuing",
+      "logo": "/sjcet.png",
+      "website": "https://sjcetpalai.ac.in/"
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "Java",
+      "TypeScript",
+      "Rust",
+      "SQL"
+    ],
+    "libraries": [
+      "React.js",
+      "Express.js",
+      "TailwindCSS",
+      "Shadcn"
+    ],
+    "frameworks": [
+      "FastAPI",
+      "Next.js",
+      "Node.js"
+    ],
+    "tools": [
+      "VS Code",
+      "Git",
+      "Figma",
+      "PostgreSQL"
+    ]
+  },
+  "interests": [
+    {
+      "name": "Artificial Intelligence",
+      "description": "Machine learning, neural networks, and AI applications"
+    },
+    {
+      "name": "Data Science",
+      "description": "Data analysis, visualization, and predictive modeling"
+    },
+    {
+      "name": "Finance",
+      "description": "Financial technology and market analysis"
+    },
+    {
+      "name": "Quant Analytics",
+      "description": "Quantitative analysis and algorithmic trading"
+    },
+    {
+      "name": "System Design",
+      "description": "Scalable architecture and distributed systems"
+    },
+    {
+      "name": "Software Engineering",
+      "description": "Clean code, best practices, and software architecture"
+    }
+  ],
+  "projects": [
+    {
+      "title": "iSense",
+      "subtitle": "Decoding vision, delivering insight",
+      "duration": "May 2025 – June 2025",
+      "description": "iSense is an AI-powered image analysis platform that integrates computer vision and natural language processing. Users can upload images and ask questions in natural language to receive intelligent, contextual answers, powered by the LLaMA 4 Scout model on Groq's high-performance infrastructure.",
+      "keyFeatures": [
+        "Image understanding using Groq's LLaMA 4 Scout model",
+        "Conversational Q&A about image content",
+        "Real-time image upload and preview with support for multiple formats",
+        "Secure user authentication through Clerk",
+        "Fully responsive and animated UI built with Tailwind CSS",
+        "Planned support for persistent chat history"
+      ],
+      "technologies": [
+        "Next.js 15",
+        "TypeScript",
+        "Tailwind CSS",
+        "Groq AI",
+        "LLaMA 4 Scout",
+        "Clerk",
+        "Lucide React"
+      ],
+      "url": "https://i-sense.vercel.app/",
+      "status": "Deployed"
+    },
+    {
+      "title": "Tazkz",
+      "subtitle": "Not the regular task manager",
+      "duration": "June 2025",
+      "description": "Tazkz is a modern task and note-taking application that reimagines productivity by combining tasks and thoughts in a single, unified interface. Built with Next.js 15 and Tailwind CSS, it provides a fast, clean, and intuitive experience to help users plan, manage, and track their day effectively.",
+      "keyFeatures": [
+        "Smart task management with parent-child hierarchy, progress tracking, and priority-based sorting",
+        "Contextual note-taking directly within tasks",
+        "Real-time progress visualization using interactive sliders and indicators",
+        "Secure authentication with protected routes powered by Clerk",
+        "Responsive and animated UI built using shadcn/ui",
+        "Robust full-stack setup using Next.js 15 (App Router), Supabase (PostgreSQL), and TypeScript"
+      ],
+      "technologies": [
+        "Next.js 15",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase",
+        "PostgreSQL",
+        "Clerk",
+        "shadcn/ui"
+      ],
+      "url": "https://tazkz.vercel.app/",
+      "status": "Deployed"
+    },
+    {
+      "title": "HackSphere 2025 Landing Page",
+      "subtitle": "A responsive landing page for a global hackathon event",
+      "duration": "May 2025",
+      "description": "A responsive landing page for a fictional global hackathon event built with React and TypeScript. This project was created as an internship screening task to demonstrate front-end development skills, featuring modern React with TypeScript and functional components.",
+      "keyFeatures": [
+        "Modern React with TypeScript and functional components",
+        "Responsive design that works across mobile, tablet, and desktop",
+        "Clean, modular CSS with separate stylesheets for each component",
+        "Header with navigation links to different sections",
+        "Hero section with striking banner, event name, tagline, and registration CTA",
+        "About section with detailed hackathon description",
+        "FAQ section answering common questions",
+        "Contacts section with email and phone contact information",
+        "Footer with copyright information and social media handles"
+      ],
+      "technologies": [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "CSS3"
+      ],
+      "url": "https://hacksphere2025-vaishakh.vercel.app/",
+      "status": "Deployed"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Full Stack Developer",
+      "company": "Freelance",
+      "duration": "2023 - Present",
+      "description": "Developing full-stack applications using modern technologies like Next.js, React, TypeScript, and various backend solutions.",
+      "responsibilities": [
+        "Building responsive web applications with modern UI/UX",
+        "Implementing AI-powered features and integrations",
+        "Working with databases like PostgreSQL and Supabase",
+        "Deploying applications on cloud platforms like Vercel"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Fluent"
+    },
+    {
+      "name": "Hindi",
+      "proficiency": "Fluent"
+    },
+    {
+      "name": "Malayalam",
+      "proficiency": "Native"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-07-03",
+    "version": "1.0",
+    "format": "JSON Resume Schema",
+    "createdBy": "C S Vaishakh"
+  }
+}
