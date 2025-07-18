@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
                                 <Image src={'/x.svg'} alt="X" height={22} width={22}/>
                             </button>
                         </Link>
-                        <Link href='mailto:contactvaishakh@gmail.com' target="_blank" rel="noopener noreferrer">
+                        <Link href="mailto:contactvaishakh25@gmail.com" target="_blank" rel="noopener noreferrer">
                             <button className="group flex items-center justify-center px-4 py-3 text-black bg-white hover:text-white hover:bg-red-500 rounded-r-xl transition-all duration-300 font-medium shadow-none min-w-[48px]">
                                 <Image src={'/gmail.svg'} alt="Email" height={22} width={22}/>
                             </button>
