@@ -1,11 +1,11 @@
 {
   "personalInfo": {
     "name": "C S Vaishakh",
-    "title": "Full Stack Developer",
+    "title": "Software Engineer Intern",
     "subtitle": "Artificial Intelligence Student",
-    "email": "contactvaishakh@gmail.com",
+    "email": "vaishakhsubramonian@gmail.com",
     "phone": "+91 7511137620",
-    "location": "India",
+    "location": "Ettumanoor, Kerala",
     "profileImage": "/myself.png",
     "summary": "Full Stack Developer and Third-year Artificial Intelligence & Data Science student passionate about building intelligent systems, exploring emerging technologies, and turning ideas into impactful solutions. With a focus on innovation and thoughtful design, I love creating experiences that matter."
   },
@@ -20,6 +20,7 @@
       "degree": "B.Tech Artificial Intelligence & Data Science",
       "duration": "2023-2027",
       "status": "Pursuing",
+      "gpa": "6.82",
       "logo": "/sjcet.png",
       "website": "https://sjcetpalai.ac.in/"
     }
@@ -27,27 +28,24 @@
   "skills": {
     "languages": [
       "Python",
-      "Java",
       "TypeScript",
-      "Rust",
-      "SQL"
+      "Java",
+      "Go"
     ],
-    "libraries": [
-      "React.js",
-      "Express.js",
-      "TailwindCSS",
-      "Shadcn"
-    ],
-    "frameworks": [
-      "FastAPI",
-      "Next.js",
-      "Node.js"
-    ],
-    "tools": [
-      "VS Code",
+    "technologies": [
       "Git",
-      "Figma",
-      "PostgreSQL"
+      "GitHub",
+      "Docker",
+      "React.js",
+      "Next.js",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "softSkills": [
+      "Critical Thinking",
+      "Problem Solving",
+      "Collaboration",
+      "Adaptability"
     ]
   },
   "interests": [
@@ -99,7 +97,7 @@
         "Clerk",
         "Lucide React"
       ],
-      "url": "https://i-sense.vercel.app/",
+      "url": "https://isense.vaishakh.live/",
       "status": "Deployed"
     },
     {
@@ -124,7 +122,7 @@
         "Clerk",
         "shadcn/ui"
       ],
-      "url": "https://tazkz.vercel.app/",
+      "url": "https://tazkz.vaishakh.live/",
       "status": "Deployed"
     },
     {
@@ -155,16 +153,10 @@
   ],
   "experience": [
     {
-      "title": "Full Stack Developer",
-      "company": "Freelance",
-      "duration": "2023 - Present",
-      "description": "Developing full-stack applications using modern technologies like Next.js, React, TypeScript, and various backend solutions.",
-      "responsibilities": [
-        "Building responsive web applications with modern UI/UX",
-        "Implementing AI-powered features and integrations",
-        "Working with databases like PostgreSQL and Supabase",
-        "Deploying applications on cloud platforms like Vercel"
-      ]
+      "title": "Frontend Engineer Intern",
+      "company": "The Nexus Project",
+      "duration": "June 2025",
+      "description": "During my one-month internship with The Nexus Project, I contributed to a stealth-mode startup's core team, focusing on developing their pre-MVP web application. This role allowed me to thrive in a fast-paced environment, where I transformed initial concepts into structured product flows and delivered production-ready features efficiently."
     }
   ],
   "languages": [
@@ -182,8 +174,8 @@
     }
   ],
   "metadata": {
-    "lastUpdated": "2025-07-03",
-    "version": "1.0",
+    "lastUpdated": "2025-07-18",
+    "version": "1.1",
     "format": "JSON Resume Schema",
     "createdBy": "C S Vaishakh"
   }
