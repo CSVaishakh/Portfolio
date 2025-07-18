@@ -6,7 +6,7 @@ const Skills: React.FC = () => {
     const skillCategories = [
         {
             title: "Languages",
-            skills: ["Python", "Java", "TypeScript", "Rust", "SQL"]
+            skills: ["Python", "Java", "TypeScript", "SQL", "Go"]
         },
         {
             title: "Libraries",
@@ -80,7 +80,7 @@ const Skills: React.FC = () => {
                         <motion.div
                             key={category.title}
                             variants={itemVariants}
-                            className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4 items-center md:items-center text-center md:text-left"
+                            className="flex flex-col md:flex-row gap-2 sm:gap-4 items-center md:items-center text-center md:text-left"
                         >
                             <motion.span
                                 whileHover={{
