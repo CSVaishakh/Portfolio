@@ -1,26 +1,50 @@
 'use client';
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+interface SkillCategory {
+    title: string;
+    skills: string[];
+}
+
+interface ResumeData {
+    skills: {
+        languages: string[];
+        technologies: string[];
+        softSkills: string[];
+    };
+}
+
 const Skills: React.FC = () => {
-    const skillCategories = [
-        {
-            title: "Languages",
-            skills: ["Python", "Java", "TypeScript", "SQL", "Go"]
-        },
-        {
-            title: "Libraries",
-            skills: ["React.js", "Express.js", "TailwindCSS", "Shadcn"]
-        },
-        {
-            title: "Frameworks",
-            skills: ["FastAPI", "Next.js", "Node.js"]
-        },
-        {
-            title: "Tools",
-            skills: ["VS Code", "Git", "Figma", "PostgreSQL"]
-        }
-    ];
+    const [skillCategories, setSkillCategories] = useState<SkillCategory[]>([]);
+
+    useEffect(() => {
+        const loadSkillsData = async () => {
+            try {
+                const response = await fetch('/resume.json');
+                const resumeData: ResumeData = await response.json();
+                
+                setSkillCategories([
+                    {
+                        title: "Languages",
+                        skills: resumeData.skills.languages
+                    },
+                    {
+                        title: "Technologies",
+                        skills: resumeData.skills.technologies
+                    },
+                    {
+                        title: "Soft Skills",
+                        skills: resumeData.skills.softSkills
+                    }
+                ]);
+            } catch (error) {
+                console.error('Error loading resume data:', error);
+            }
+        };
+
+        loadSkillsData();
+    }, []);
 
     const containerVariants = {
         hidden: { opacity: 0 },

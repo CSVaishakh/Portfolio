@@ -30,16 +30,16 @@
       "Python",
       "TypeScript",
       "Java",
-      "Go"
+      "Go",
+      "yml"
     ],
     "technologies": [
       "Git",
-      "GitHub",
-      "Docker",
+      "GitHub Actions",
       "React.js",
       "Next.js",
-      "PostgreSQL",
-      "MySQL"
+      "Go-Fiber",
+      "PostgreSQL"
     ],
     "softSkills": [
       "Critical Thinking",
